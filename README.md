@@ -1,6 +1,6 @@
 # Animate Video Player
 
-![preview](https://github.com/tpkn/animate-video-player/blob/master/preview.png)
+![preview](https://github.com/tpkn/animate-video-player/blob/master/preview.gif)
 
 
 ### Benefits
