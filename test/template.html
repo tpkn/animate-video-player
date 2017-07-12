@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>$TITLE</title>
+$CENTER_STYLE
+<script src="../animate-video-player.min.js"></script>
+$CREATEJS_LIBRARY_SCRIPTS
+$ANIMATE_CC_SCRIPTS
+$SCRIPT_START
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("$CANVAS_ID");
+	anim_container = document.getElementById("$ANIM_CONTAINER_ID");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	$CREATE_LOADER
+	$LOAD_MANIFEST
+	$PRELOAD_ASSETS
+}
+$HANDLE_FILE_LOAD_START	
+	$HANDLE_FILE_LOAD_BODY	
+$HANDLE_FILE_LOAD_END
+$HANDLE_COMPLETE_START
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	$CREATE_STAGE	
+	//Registers the "tick" event listener.
+	$START_ANIMATION	    
+	//Code to support hidpi screens and responsive scaling.
+	$RESP_HIDPI	
+$HANDLE_COMPLETE_END
+$PLAYSOUND
+$SCRIPT_END
+</head>
+<body onload="init();" style="margin:0px;background:url('images/vertical-waves.png')">
+	<div id="$ANIM_CONTAINER_ID" style="background-color:transparent; width:$WTpx; height:$HTpx; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
+		<canvas id="$CANVAS_ID" width="$WT" height="$HT" style="position: absolute; display: $CANVAS_DISP; background-color:transparent;"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:$WTpx; height:$HTpx; position: absolute; left: 0px; top: 0px; display: $CANVAS_DISP;"></div>
+		<div style="text-align:center;position:absolute;left:0;right:0;margin:0 auto;bottom:0; width:100%; color:#7f7f7f;font-family: 'Arial'; font-size: 10px;">Background pattern form <a href="https://www.toptal.com/designers/subtlepatterns/">toptal.com</a> and original video is here <a href="https://peach.blender.org/download/">Big Buck Bunny</a></div>
+	</div>
+    $PRELOADER_DIV
+</body>
+</html>

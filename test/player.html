@@ -343,7 +343,7 @@ p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
 	// mask (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	mask.graphics.p("AsRMRQlElFAAnMQAAnLFElFQFGlFHLAAQHLAAFGFFQFFFFAAHLQAAHMlFFFQlGFFnLAAQnLAAlGlFg");
+	mask.graphics.p("AsQMRQlFlFAAnMQAAnLFFlFQFFlFHLAAQHLAAFGFFQFFFFAAHLQAAHMlFFFQlGFFnLAAQnLAAlFlFg");
 	mask.setTransform(200,112);
 	// poster_mc
 	this.poster_mc = new lib.poster_mc();
@@ -457,10 +457,11 @@ function handleComplete(evt) {
 }
 </script>
 </head>
-<body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:500px; height:400px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
-		<canvas id="canvas" width="500" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+<body onload="init();" style="margin:0px;background:url('images/vertical-waves.png')">
+	<div id="animation_container" style="background-color:transparent; width:500px; height:400px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
+		<canvas id="canvas" width="500" height="400" style="position: absolute; display: block; background-color:transparent;"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:500px; height:400px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+		<div style="text-align:center;position:absolute;left:0;right:0;margin:0 auto;bottom:0; width:100%; color:#7f7f7f;font-family: 'Arial'; font-size: 10px;">Background pattern form <a href="https://www.toptal.com/designers/subtlepatterns/">toptal.com</a> and original video is here <a href="https://peach.blender.org/download/">Big Buck Bunny</a></div>
 	</div>
 </body>
 </html>
