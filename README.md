@@ -19,6 +19,7 @@
 ### Usage (code for Animate CC)
 ```javascript
 var config = {
+   container: this.video_mc,
    videos: ['videos/video.mp4', 'videos/video.ogg', 'videos/video.webm'],
    autoplay: true,
    loop: false,
@@ -65,20 +66,7 @@ var config = {
 /**
  * Make player instance global
  */
-window.cvp = new CreatejsVideoPlayer(config);
-
-/**
- * Scale video so it fits container
- * There is no width and height property in createjs, so use scaleX/Y (container.width / video.width)
- */
-var video_bitmap = new createjs.Bitmap(cvp.video);
-video_bitmap.scaleX = 400 / 640;
-video_bitmap.scaleY = 225 / 360;
-
-/**
- * Feed video stream into createjs bitmap object 'video_mc'
- */
-this.video_mc.addChild(video_bitmap);
+window.avp = new AnimateVideoPlayer(config);
 ```
 
 
@@ -86,6 +74,7 @@ this.video_mc.addChild(video_bitmap);
 ### Config 1 (autoplay + 1 cycle + controls)
 ```javascript
 var config = {
+   container: this.video_mc,
    videos: ['videos/video.mp4', 'videos/video.ogg'],
    autoplay: true,
    muted: true,
@@ -104,6 +93,7 @@ var config = {
 ### Config 2 (autoplay + looped + no controls)
 ```javascript
 var config = {
+   container: this.video_mc,
    videos: ['videos/video.mp4', 'videos/video.ogg'],
    autoplay: true,
    loop: true
@@ -130,6 +120,7 @@ var config = {
 ### Basic settings (config)
 | Option | Type | Default | Description |
 |-------------|:-------------:|:-------------:|-------------|
+| container | Object | - | CreateJS object |
 | videos | Array / String | - | Link to video or array of link |
 | autoplay | Boolean | false | - |
 | loop | Boolean | false | - |
