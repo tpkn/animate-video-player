@@ -253,6 +253,7 @@ p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
 		 * Animate Video Player (v1.0.1.20161208), http://tpkn.me/
 		 */
 		var config = {
+			container: this.video_mc,
 			videos: ['videos/video.mp4', 'videos/video.ogg'],
 			autoplay: true,
 			loop: false,
@@ -301,17 +302,6 @@ p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
 		 * Make player instance global
 		 */
 		window.avp = new AnimateVideoPlayer(config);
-		/**
-		 * Scale video so it fits container
-		 * There is no width and height property is createjs, so use scaleX/Y (container.width / video.width)
-		 */
-		var video_bitmap = new createjs.Bitmap(avp.video);
-		video_bitmap.scaleX = 1;
-		video_bitmap.scaleY = 1;
-		/**
-		 * Feed video stream into createjs bitmap object
-		 */
-		this.video_mc.addChild(video_bitmap);
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
