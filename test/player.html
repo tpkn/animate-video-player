@@ -257,7 +257,7 @@ p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
 			videos: ['videos/video.mp4', 'videos/video.ogg'],
 			autoplay: true,
 			loop: false,
-			mute: true,
+			muted: false,
 			controls: {
 				play_btn: this.pp_btn,
 				sound_btn: this.sound_btn,
@@ -266,36 +266,6 @@ p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
 				poster_mc: this.poster_mc
 			},
 			callbacks: {
-				on_meta: function(e){
-					console.log('> Callback: on_meta');
-				},
-				on_ready: function(e){
-					console.log('> Callback: on_ready');
-				},
-				on_start: function(e){
-					console.log('> Callback: on_start');
-				},
-				on_update: function(e){
-					console.log('> Callback: on_update (' + e.target.currentTime + 'sec)');
-				},
-				on_end: function(e){
-					console.log('> Callback: on_end');
-				},
-				on_replay: function(e){
-					console.log('> Callback: on_replay');
-				},
-				on_play: function(e){
-					console.log('> Callback: on_play');
-				},
-				on_pause: function(e){
-					console.log('> Callback: on_pause');
-				},
-				on_mute: function(e){
-					console.log('> Callback: on_mute');
-				},
-				on_unmute: function(e){
-					console.log('> Callback: on_unmute');
-				}
 			}
 		}
 		/**
