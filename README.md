@@ -152,3 +152,7 @@ var config = {
 | replay_btn | Object | - | CreateJS object |
 | preloader_mc | Object | - | CreateJS object (with looped animation) |
 | poster_mc | Object | - | CreateJS object (with poster image) |
+
+
+## Changelog 2017-08-17:
+- Fixed bug when function using `canPlayType()` returns `null` if video path doesn't have an extension. Now all media sources are placed in separate `<source>` tags.
