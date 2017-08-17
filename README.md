@@ -7,7 +7,7 @@
 1. You could animate container the way you wish to
 2. You could place container anywhere on stage
 3. You could set multiple video types to make sure it would work in different browsers
-4. It's core is about 3.4KB
+4. Core is about 3.4KB
 
 
 ### Issues
