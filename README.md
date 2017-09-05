@@ -10,8 +10,8 @@
 4. Core is about 3.4KB
 
 
-### Issues
-1. Doesn't work properly on mobile OS
+### PS
+Not tested enough on mobile OS
 
 
 
