@@ -8,13 +8,11 @@
 2. You could place container anywhere on stage
 3. You could set multiple video types to make sure it would work in different browsers
 4. Core is about 3.4KB
-
+<br />
 
 ### PS
 Not tested enough on mobile OS
-
-
-
+<br />
 
 ### Usage (code for Animate CC)
 ```javascript
@@ -68,8 +66,7 @@ var config = {
  */
 window.avp = new AnimateVideoPlayer(config);
 ```
-
-
+<br />
 
 ### Config 1 (autoplay + 1 cycle + controls)
 ```javascript
@@ -87,8 +84,7 @@ var config = {
    }
 }
 ```
-
-
+<br />
 
 ### Config 2 (autoplay + looped + no controls)
 ```javascript
@@ -99,8 +95,7 @@ var config = {
    loop: true
 }
 ```
-
-
+<br />
 
 ### Public methods
 | Method | Type | Description |
@@ -113,9 +108,7 @@ var config = {
 | unmute | Function | - |
 | togglePlay | Function | - |
 | toggleMute | Function | - |
-
-
-
+<br />
 
 ### Basic settings (config)
 | Option | Type | Default | Description |
@@ -126,8 +119,7 @@ var config = {
 | loop | Boolean | false | - |
 | muted | Boolean | true | - |
 | preload | String | 'auto' | - |
-
-
+<br />
 
 ### Callbacks (config.callbacks)
 | Option | Type | Default | Description |
@@ -141,8 +133,7 @@ var config = {
 | on_pause | Function | - | - |
 | on_mute | Function | - | - |
 | on_unmute | Function | - | - |
-
-
+<br />
 
 ### UI (config.controls)
 | Option | Type | Default | Description |
@@ -152,7 +143,7 @@ var config = {
 | replay_btn | Object | - | CreateJS object |
 | preloader_mc | Object | - | CreateJS object (with looped animation) |
 | poster_mc | Object | - | CreateJS object (with poster image) |
-
+<br />
 
 ## Changelog 2017-08-17:
 - Fixed bug when function using `canPlayType()` returns `null` if video path doesn't have an extension. Now all media sources are placed in separate `<source>` tags.
