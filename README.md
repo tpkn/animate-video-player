@@ -103,6 +103,7 @@ var config = {
 | video | Object | Video instance |
 | play | Function | - |
 | pause | Function | - |
+| stop | Function | - |
 | restart | Function | Hard restart video |
 | mute | Function | - |
 | unmute | Function | - |
