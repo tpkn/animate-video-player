@@ -3,18 +3,14 @@
 ![preview](https://github.com/tpkn/animate-video-player/blob/master/preview.gif)
 
 
-### Benefits
+## Benefits
 1. You could animate container the way you wish to
 2. You could place container anywhere on stage
 3. You could set multiple video types to make sure it would work in different browsers
 4. Core is about 3.4KB
-<br />
 
-### PS
-Not tested enough on mobile OS
-<br />
 
-### Usage (code for Animate CC)
+## Usage (code for Animate CC)
 ```javascript
 var config = {
    container: this.video_mc,
@@ -97,7 +93,7 @@ var config = {
 ```
 
 
-### Public methods
+## Public methods
 | Method | Type | Description |
 |-------------|:-------------:|-------------|
 | video | Object | Video instance |
@@ -111,7 +107,7 @@ var config = {
 | toggleMute | Function | - |
 
 
-### Basic settings (config)
+## Basic settings (config)
 | Option | Type | Default | Description |
 |-------------|:-------------:|:-------------:|-------------|
 | container | Object | - | CreateJS object |
@@ -122,7 +118,7 @@ var config = {
 | preload | String | 'auto' | - |
 
 
-### Callbacks (config.callbacks)
+## Callbacks (config.callbacks)
 | Option | Type | Default | Description |
 |-------------|:-------------:|:-------------:|-------------|
 | on_ready | Function | - | - |
@@ -136,7 +132,7 @@ var config = {
 | on_unmute | Function | - | - |
 
 
-### UI (config.controls)
+## UI (config.controls)
 | Option | Type | Default | Description |
 |-------------|:-------------:|:-------------:|-------------|
 | play_btn | Object | - | CreateJS object (with 2 frames for each state) |
@@ -144,7 +140,15 @@ var config = {
 | replay_btn | Object | - | CreateJS object |
 | preloader_mc | Object | - | CreateJS object (with looped animation) |
 | poster_mc | Object | - | CreateJS object (with poster image) |
-<br />
 
-## Changelog 2017-08-17:
+
+## PS
+Not tested enough on mobile OS
+
+
+## Changelog 
+#### 2017-11-19:
+- Added `stop` method
+
+#### 2017-08-17:
 - Fixed bug when function using `canPlayType()` returns `null` if video path doesn't have an extension. Now all media sources are placed in separate `<source>` tags.
