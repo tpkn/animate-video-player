@@ -66,7 +66,7 @@ var config = {
  */
 window.avp = new AnimateVideoPlayer(config);
 ```
-<br />
+
 
 ### Config 1 (autoplay + 1 cycle + controls)
 ```javascript
@@ -84,7 +84,7 @@ var config = {
    }
 }
 ```
-<br />
+
 
 ### Config 2 (autoplay + looped + no controls)
 ```javascript
@@ -95,7 +95,7 @@ var config = {
    loop: true
 }
 ```
-<br />
+
 
 ### Public methods
 | Method | Type | Description |
@@ -109,7 +109,7 @@ var config = {
 | unmute | Function | - |
 | togglePlay | Function | - |
 | toggleMute | Function | - |
-<br />
+
 
 ### Basic settings (config)
 | Option | Type | Default | Description |
@@ -120,7 +120,7 @@ var config = {
 | loop | Boolean | false | - |
 | muted | Boolean | true | - |
 | preload | String | 'auto' | - |
-<br />
+
 
 ### Callbacks (config.callbacks)
 | Option | Type | Default | Description |
@@ -134,7 +134,7 @@ var config = {
 | on_pause | Function | - | - |
 | on_mute | Function | - | - |
 | on_unmute | Function | - | - |
-<br />
+
 
 ### UI (config.controls)
 | Option | Type | Default | Description |
