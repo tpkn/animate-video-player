@@ -19,36 +19,36 @@
 ### options
 **Type**: _Object_  
 
-###options.container
+### options.container
 **Type**: _Object_  
 **Default**: `false`   
 Createjs object
 
-###options.videos
+### options.videos
 **Type**: _String_ | _Array_  
 **Default**: `false`   
 Link to video or array of videos
 
-###options.autoplay
+### options.autoplay
 **Type**: _Boolean_  
 **Default**: `false`   
 
-###options.loop
+### options.loop
 **Type**: _Boolean_  
 **Default**: `false`   
 
-###options.muted
+### options.muted
 **Type**: _Boolean_  
 **Default**: `true`   
 
-###options.preload
+### options.preload
 **Type**: _String_  
 **Default**: `auto`   
 
 
 
 
-###options.controls
+### options.controls
 **Type**: _Object_  
 Here you can set instances of player ui    
 ```js
@@ -64,7 +64,7 @@ Here you can set instances of player ui
 `start_btn` is the big play button displayed if you set `autoplay`: `false` (`play_btn` and `sound_btn` will be hidden until the video starts playing)
 
 
-###options.callbacks  
+### options.callbacks  
 **Type**: _Object_  
 ```js
 {
@@ -85,33 +85,33 @@ Here you can set instances of player ui
 
 ## Public
 
-###.video
+### .video
 **Type**: _Object_   
 Video instance
 
-###.play()
+### .play()
 **Type**: _Function_   
 
-###.pause()
+### .pause()
 **Type**: _Function_   
 
-###.stop()
+### .stop()
 **Type**: _Function_   
 
-###.restart()
+### .restart()
 **Type**: _Function_   
 Hard restart
 
-###.mute()
+### .mute()
 **Type**: _Function_   
 
-###.unmute()
+### .unmute()
 **Type**: _Function_   
 
-###.togglePlay()
+### .togglePlay()
 **Type**: _Function_   
 
-###.toggleMute()
+### .toggleMute()
 **Type**: _Function_   
 
 
