@@ -10,6 +10,114 @@
 4. Core is about 3.4KB
 
 
+
+## API
+
+### AnimateVideoPlayer(options)
+
+
+### options
+**Type**: _Object_  
+
+#### options.container
+**Type**: _Object_  
+**Default**: `false`   
+Createjs object
+
+#### options.videos
+**Type**: _String_ | _Array_  
+**Default**: `false`   
+Link to video or array of videos
+
+#### options.autoplay
+**Type**: _Boolean_  
+**Default**: `false`   
+
+#### options.loop
+**Type**: _Boolean_  
+**Default**: `false`   
+
+#### options.muted
+**Type**: _Boolean_  
+**Default**: `true`   
+
+#### options.preload
+**Type**: _String_  
+**Default**: `auto`   
+
+
+
+
+#### options.controls
+**Type**: _Object_  
+Here you can set instances of player ui    
+```js
+{
+	play_btn     : this.pp_btn,
+	sound_btn    : this.sound_btn,
+	start_btn    : this.start_btn,
+	replay_btn   : this.replay_btn,
+	preloader_mc : this.preloader_mc,
+	poster_mc    : this.poster_mc
+}
+```   
+`start_btn` is the big play button displayed if you set `autoplay`: `false` (`play_btn` and `sound_btn` will be hidden until the video starts playing)
+
+
+#### options.callbacks  
+**Type**: _Object_  
+```js
+{
+	on_ready  : function(){}
+	on_start  : function(){}
+	on_update : function(){}
+	on_end    : function(){}
+	on_replay : function(){}
+	on_play   : function(){}
+	on_pause  : function(){}
+	on_mute   : function(){}
+	on_unmute : function(){}
+}
+```   
+ 
+
+
+
+## Public
+
+#### .video
+**Type**: _Object_   
+Video instance
+
+#### .play()
+**Type**: _Function_   
+
+#### .pause()
+**Type**: _Function_   
+
+#### .stop()
+**Type**: _Function_   
+
+#### .restart()
+**Type**: _Function_   
+Hard restart
+
+#### .mute()
+**Type**: _Function_   
+
+#### .unmute()
+**Type**: _Function_   
+
+#### .togglePlay()
+**Type**: _Function_   
+
+#### .toggleMute()
+**Type**: _Function_   
+
+
+
+
+
 ## Usage (code for Animate CC)
 ```javascript
 var config = {
@@ -22,6 +130,7 @@ var config = {
       play_btn: this.pp_btn,
       sound_btn: this.sound_btn,
       replay_btn: this.replay_btn,
+      start_btn: this.start_btn,
       preloader_mc: this.preloader_mc,
       poster_mc: this.poster_mc
    },
@@ -93,53 +202,6 @@ var config = {
 ```
 
 
-## Public methods
-| Method | Type | Description |
-|-------------|:-------------:|-------------|
-| video | Object | Video instance |
-| play | Function | - |
-| pause | Function | - |
-| stop | Function | - |
-| restart | Function | Hard restart video |
-| mute | Function | - |
-| unmute | Function | - |
-| togglePlay | Function | - |
-| toggleMute | Function | - |
-
-
-## Basic settings (config)
-| Option | Type | Default | Description |
-|-------------|:-------------:|:-------------:|-------------|
-| container | Object | - | CreateJS object |
-| videos | Array / String | - | Link to video or array of link |
-| autoplay | Boolean | false | - |
-| loop | Boolean | false | - |
-| muted | Boolean | true | - |
-| preload | String | 'auto' | - |
-
-
-## Callbacks (config.callbacks)
-| Option | Type | Default | Description |
-|-------------|:-------------:|:-------------:|-------------|
-| on_ready | Function | - | - |
-| on_start | Function | - | - |
-| on_update | Function | - | - |
-| on_end | Function | - | - |
-| on_replay | Function | - | - |
-| on_play | Function | - | - |
-| on_pause | Function | - | - |
-| on_mute | Function | - | - |
-| on_unmute | Function | - | - |
-
-
-## UI (config.controls)
-| Option | Type | Default | Description |
-|-------------|:-------------:|:-------------:|-------------|
-| play_btn | Object | - | CreateJS object (with 2 frames for each state) |
-| sound_btn | Object | - | CreateJS object (with 2 frames for each state) |
-| replay_btn | Object | - | CreateJS object |
-| preloader_mc | Object | - | CreateJS object (with looped animation) |
-| poster_mc | Object | - | CreateJS object (with poster image) |
 
 
 ## PS
@@ -147,8 +209,11 @@ Not tested enough on mobile OS
 
 
 ## Changelog 
-#### 2017-11-19:
+#### v1.3.0 (2018-05-19):
+- added support of big `play` button
+
+#### v1.2.5 (2017-11-19):
 - Added `stop` method
 
-#### 2017-08-17:
+#### v1.0.1 (2017-08-17):
 - Fixed bug when function using `canPlayType()` returns `null` if video path doesn't have an extension. Now all media sources are placed in separate `<source>` tags.
