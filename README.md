@@ -53,12 +53,12 @@ Link to video or array of videos
 Here you can set instances of player ui    
 ```js
 {
-	play_btn     : this.pp_btn,
-	sound_btn    : this.sound_btn,
-	start_btn    : this.start_btn,
-	replay_btn   : this.replay_btn,
-	preloader_mc : this.preloader_mc,
-	poster_mc    : this.poster_mc
+   play_btn     : this.pp_btn,
+   sound_btn    : this.sound_btn,
+   start_btn    : this.start_btn,
+   replay_btn   : this.replay_btn,
+   preloader_mc : this.preloader_mc,
+   poster_mc    : this.poster_mc
 }
 ```   
 `start_btn` is the big play button displayed if you set `autoplay`: `false` (`play_btn` and `sound_btn` will be hidden until the video starts playing)
@@ -68,15 +68,15 @@ Here you can set instances of player ui
 **Type**: _Object_  
 ```js
 {
-	on_ready  : function(){}
-	on_start  : function(){}
-	on_update : function(){}
-	on_end    : function(){}
-	on_replay : function(){}
-	on_play   : function(){}
-	on_pause  : function(){}
-	on_mute   : function(){}
-	on_unmute : function(){}
+   on_ready  : function(){}
+   on_start  : function(){}
+   on_update : function(){}
+   on_end    : function(){}
+   on_replay : function(){}
+   on_play   : function(){}
+   on_pause  : function(){}
+   on_mute   : function(){}
+   on_unmute : function(){}
 }
 ```   
  
