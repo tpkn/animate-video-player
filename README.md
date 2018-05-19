@@ -3,11 +3,12 @@
 ![preview](https://github.com/tpkn/animate-video-player/blob/master/preview.gif)
 
 
-## Benefits
-1. You could animate container the way you wish to
-2. You could place container anywhere on stage
-3. You could set multiple video types to make sure it would work in different browsers
-4. Core is about 3.4KB
+## Features
+- You could animate container the way you wish to
+- Position the video anywhere on a stage
+- Set multiple video types to make sure it would work in different browsers
+- Customize player controls
+- Core is about 3.5KB
 
 
 
@@ -83,11 +84,7 @@ Here you can set instances of player ui
 
 
 
-## Public
-
-### .video
-**Type**: _Object_   
-Video instance
+## Public methods
 
 ### .play()
 **Type**: _Function_   
@@ -113,6 +110,10 @@ Hard restart
 
 ### .toggleMute()
 **Type**: _Function_   
+
+### .video
+**Type**: _Object_   
+Video instance
 
 
 
