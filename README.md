@@ -206,7 +206,8 @@ var config = {
 
 
 ## PS
-Not tested enough on mobile OS
+ - Not tested enough on mobile OS
+ - Video for preview: (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
 
 
 ## Changelog 
